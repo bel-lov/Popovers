@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    background-color: red;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.wrapper-tooltip {
+    background-color: aquamarine;
+    border: 1px solid red;
+}
