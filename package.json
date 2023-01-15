@@ -1,7 +1,7 @@
 {
-  "name": "testing",
+  "name": "popover",
   "version": "1.0.0",
-  "description": "",
+  "description": "Работа с HTML-формами",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
@@ -48,5 +48,13 @@
   },
   "dependencies": {
     "core-js": "^3.27.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bel-lov/Popovers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bel-lov/Popovers/issues"
+  },
+  "homepage": "https://github.com/bel-lov/Popovers#readme"
 }

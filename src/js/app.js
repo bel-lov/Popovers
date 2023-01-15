@@ -1,6 +1,9 @@
-import Tooltip from "./tooltip";
+import { Tooltip } from "./tooltip";
 
-const tooltip = new Tooltip();
-tooltip.showTooltip(el)
+const container = document.querySelector('.container');
+
+const tooltip = new Tooltip(container);
+
+tooltip.bind()
 
 

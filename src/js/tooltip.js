@@ -1,17 +1,20 @@
 export class Tooltip {
-    constructor() {
+    constructor(tooltip) {
         this.tooltip = tooltip;
     }
 
-    showTooltip(el) {
-        const tooltipEl = document.createElement('div');
-        tooltipEl.classList.add('wrapper-tooltip');
-        const tooltipTitle = document.createElement('h2');
-        tooltipTitle.classList.add('tooltip-title');
-        tooltipTitle.textContent = 'Popover title';
-        const tooltipText = document.createElement('div');
-        tooltipText.classList.add('tooltip-text');
-        tooltipText.textContent = 'And here is some amazing content.It is very engaging.Right?';
-        document.body.append(tooltipEl);
+    onButton(e) {
+        e.preventDefault();
+        const popover = this.tooltip.querySelector('.tooltip');
+        if (popover.classList.contains('active')) {
+            popover.classList.remove('active');
+        } else {
+            popover.classList.add('active');
+        }
+    }
+
+    bind() {
+        const button = this.tooltip.querySelector('.btn');
+        button.addEventListener('click', (e) => this.onButton(e));
     }
 }
